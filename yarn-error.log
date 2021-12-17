@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/local/heroku/bin/node /usr/share/yarn/bin/yarn.js add @rails/webpacker@5.4.3
+
+PATH: 
+  /home/shahenda/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/bin:/home/shahenda/.rbenv/versions/3.0.1/bin:/home/shahenda/.rbenv/libexec:/home/shahenda/.rbenv/plugins/ruby-build/bin:/home/shahenda/.rbenv/shims:/home/shahenda/.rbenv/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/shahenda/.rvm/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  12.16.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+
+npm manifest: 
+  {
+    "name": "getaround-level-one",
+    "private": true,
+    "dependencies": {
+      "@rails/ujs": "^6.0.0",
+      "turbolinks": "^5.2.0",
+      "@rails/activestorage": "^6.0.0",
+      "@rails/actioncable": "^6.0.0"
+    },
+    "version": "0.1.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
