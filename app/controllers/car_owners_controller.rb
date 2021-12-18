@@ -13,6 +13,9 @@ class CarOwnersController < ApplicationController
     private 
 
     def car_owner_params
-        params.require(:car_owner).permit(user_attributes: [:name, :email, :password, :password_confirmation])
+        request_params = params.require(:car_owner).permit(user_attributes: [:name, :email, :password, :password_confirmation])
+        user_attributes = request_params[:user_attributes].merge!("confirmed_at" => Time.now)
+        request_params[:user_attributes] = user_attributes
+        request_params
     end
 end
