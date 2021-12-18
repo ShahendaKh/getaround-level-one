@@ -6,13 +6,16 @@ class DriversController < ApplicationController
         if driver.save
             render json: driver, status: :created
         else
-            render json: driver.errors, status: :unprocessible_entity
+            render json: driver.errors, status: :unprocessable_entity
         end
     end 
 
     private 
 
     def driver_params
-        params.require(:driver).permit(:license_image, user_attributes: [:name, :email, :password, :password_confirmation])
+        request_params = params.require(:driver).permit(:license_image, user_attributes: [:name, :email, :password, :password_confirmation])
+        user_attributes = request_params[:user_attributes].merge!("confirmed_at" => Time.now)
+        request_params[:user_attributes] = user_attributes
+        request_params
     end
 end

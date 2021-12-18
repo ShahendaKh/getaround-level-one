@@ -1,8 +1,8 @@
-/tmp/
-/log/
+/tmp/*
+/tmp/cache
+/tmp/miniprofiler/
+/log
+
 /log/development.log
 /db/development.sqlite3
-/tmp/cache/bootsnap/compile-cache/25/e8eb312d5b8355
-/tmp/cache/bootsnap/compile-cache/28/dd36f311f8af1c
-/tmp/cache/bootsnap/compile-cache/92/276b043a648b4b
-/tmp/cache/bootsnap/load-path-cache
+/.byebug_history
