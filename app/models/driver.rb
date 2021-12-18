@@ -1,8 +1,8 @@
 class Driver < ApplicationRecord
-    mount_uploader :lisence_image, AvatarUploader
+    mount_uploader :license_image, AvatarUploader
 
     #### Relations ###################
-    has_one :user
+    has_one :user, as: :actable
 
     accepts_nested_attributes_for :user
 end
