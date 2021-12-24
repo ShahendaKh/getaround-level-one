@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_18_184221) do
+ActiveRecord::Schema.define(version: 2021_12_24_160519) do
 
   create_table "car_owners", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "currencies", force: :cascade do |t|
+    t.string "name"
+    t.string "code"
   end
 
   create_table "drivers", force: :cascade do |t|
