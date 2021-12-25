@@ -25,6 +25,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth'
+gem 'rspec-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

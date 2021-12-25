@@ -2,7 +2,7 @@
 /tmp/cache
 /tmp/miniprofiler/
 /log
-
+/vendor/
 /log/development.log
 /db/development.sqlite3
 /.byebug_history
